@@ -11,7 +11,7 @@ categorySize = max(size(categories));
 categorySizeForTesting = categorySize - categorySizeForTraining; 
 
 %得到矩阵W(eigenMatrix)，训练图片在特征脸上的系数(trainingVectors)，训练样本的均值(avatarXAverage)，特征脸的个数(eigenSize) 
-%[eigenMatrix, trainingVectors, avatarXAverage, eigenSize] = getEigenVectors(categorySizeForTraining); 
+[eigenMatrix, trainingVectors, avatarXAverage, eigenSize] = getEigenVectors(categorySizeForTraining); 
 
 mu = []; 
 for i = 1 : personSize 
